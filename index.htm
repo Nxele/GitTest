@@ -1,0 +1,60 @@
+<! Doctype HTML>
+<html lang="en">
+	<head>
+		<title>hacker | vecter</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="icons/redhat.ico" class="img-responsive">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body{background: url(img/Hacked.gif)}
+                h1{color:red;}
+                h2{color:red;background-color:white;}
+	</style>
+	</head>
+	<body>
+		<div class="mainForm container-fluid">
+                     <!--<center><img src="dev.gif"></center>-->
+
+		<center><h1 id="time"></h1></center><br/><br/>
+		<center><h2 id="numeber"></h1></center>
+
+		<script>
+			var myVar = setInterval(myTimer, 1000);
+                        var count = 0;
+
+			 function myTimer() {
+    			 var d = new Date();
+   			 document.getElementById("time").innerHTML = d.toLocaleTimeString();
+                                                  
+ 			count++;
+                        var randomNumber = Math.floor(Math.random() * ( 1 + 500000 - 10000 ) ) + 10000;
+			if(count==7){
+			  var i;
+                          for(i = 0; i <100; i++){
+                                    var myT = setInterval(slow, 2000);
+
+                                    function slow(){document.getElementById("numeber").innerHTML = i+"% complete  "+randomNumber +" files copied from your device";}
+				    
+				}
+                                if(i==100)
+                                {
+                                   var myTM = setInterval(slowD, 9000);
+                                   function slowD(){window.close();}
+                                }
+			  }
+                         
+                      }				
+		</script>
+                </div>
+
+	</body>
+</html>
