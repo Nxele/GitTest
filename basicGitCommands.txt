@@ -19,6 +19,15 @@ $ git commit -m "committed message" (filename)
 $ git push -u origin master
 $ git remote add origin master (url)
 
+#how i resolve the failing push
+#Merge their changes into your local branch, and then push the merged result. 
+$ git checkout master 
+$ git pull  # resolve conflicts here 
+$ git push
+
+or force it but this is more like a hack
+$ git push -u origin master --force
+
 This is the tutorials i've used to get started 
 https://www.youtube.com/watch?v=J_Clau1bYco
 http://www.codebind.com/linux-tutoria...
